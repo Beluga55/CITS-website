@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduPro</title>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/21bf2f8b90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          EduPro <i class="bx bxs-book-reader"></i
+        ></a>
+
+        <!-- Navigation -->
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-bar-chart-alt-2"></i>
+                <span>Features</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#library" class="nav__link">
+                <i class="bx bxs-book-content"></i>
+                <span>Library</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#price" class="nav__link">
+                <i class="bx bxs-purchase-tag"></i>
+                <span>Pricing</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Theme change button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Home -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <!-- Mobile -->
+            <h1 class="home__title hide-for-mobile">
+              Welcome <br />
+              To Know Your Future
+            </h1>
+
+            <p class="home__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae distinctio quia iste minima? Asperiores, alias?
+            </p>
+
+            <!-- Button -->
+            <div class="home__about-us">
+              <a href="#about" class="home__button"> About Us </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h1 class="section__title">Features</h1>
+          <p class="section__subtitle-section">
+            These are the features for our "Know Your Future" website
+          </p>
+
+          <div class="about__container swiper">
+            <div class="swiper-wrapper">
+              <!-- First Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Academic Advising</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This application offers academic advisors who help students
+                    with course selection, academic planning, and exploring
+                    academic opportunities.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Second Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Libraries and Research Resources</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This application provides access to millions of books,
+                    journals, and online resources through its extensive library
+                    system, tailored to students' specific fields of study.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Third Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Career Services</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This app offers tutoring, career counseling, and internship
+                    support to help students excel academically and plan for
+                    their future.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Fourth Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Clubs</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This app provides counseling, wellness programs, and
+                    resources for students' mental health and overall
+                    well-being.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Fifth Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Tutoring Services</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This app offers online tutoring, study groups, and workshops
+                    to support students in various courses.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Sixth Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Support Services</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This App provides support services for diverse student
+                    backgrounds, including counseling, advising, and resources
+                    tailored to their needs.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Seventh Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Religious and spiritual services</span>
+                  </h2>
+                  <p class="about__content-description" id="long-text">
+                    This app offers religious and spiritual resources to support
+                    students' diverse needs and foster a sense of community.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Eighth Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Online Music Services</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This app offers diverse music courses, ensembles, and
+                    performance opportunities for students interested in music.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Ninth Article -->
+              <article class="about__card swiper-slide">
+                <div>
+                  <h2 class="about__content-title">
+                    <span>Innovation Challenge</span>
+                  </h2>
+                  <p class="about__content-description">
+                    This application hosts an annual competition to inspire
+                    students' innovative ideas and provides support to bring
+                    those ideas to life.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Library -->
+      <section class="library" id="library">
+        <div class="container">
+          <div class="library__container">
+            <div class="library__content">
+              <h2 class="library__title">Library</h2>
+              <p class="library__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quisquam rem adipisci modi ipsum corporis asperiores
+                repellendus iste ea dolore?
+              </p>
+            </div>
+
+            <div class="library__cards-container">
+              <div class="library__cards">
+                <h3>Different Kinds Of Books</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae libero voluptatibus soluta adipisci sapiente quisquam
+                  fugiat. Maxime sed incidunt quia.
+                </p>
+              </div>
+
+              <div class="library__cards">
+                <h3>Viewable Online</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae libero voluptatibus soluta adipisci sapiente quisquam
+                  fugiat. Maxime sed incidunt quia.
+                </p>
+              </div>
+
+              <div class="library__cards">
+                <h3>Easy To Find Books</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae libero voluptatibus soluta adipisci sapiente quisquam
+                  fugiat. Maxime sed incidunt quia.
+                </p>
+              </div>
+            </div>
+
+            <div class="library__preview">
+              <a href="#">Preview Library Books</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Career -->
+      <section class="career section">
+        <div class="container">
+          <h1 class="section__title">Career</h1>
+          <p class="section__subtitle-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            placeat.
+          </p>
+
+          <div class="career__container">
+            <div class="career__cards">
+              <h3>Effective Study Strategies</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+
+            <div class="career__cards">
+              <h3>Career counseling</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+
+            <div class="career__cards">
+              <h3>job search assistance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clubs -->
+      <section class="clubs section">
+        <div class="container">
+          <h1 class="section__title">Clubs</h1>
+          <p class="section__subtitle-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            placeat.
+          </p>
+
+          <div class="clubs__container">
+            <div class="clubs__cards">
+              <h3>Badminton Clubs</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+
+            <div class="clubs__cards">
+              <h3>Futsal Clubs</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+
+            <div class="clubs__cards">
+              <h3>Volleyball Clubs</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+
+            <div class="clubs__cards">
+              <h3>Basketball Clubs</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis saepe iure optio, fugit veritatis molestiae placeat
+                ratione est animi inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Entrepreneurship Clubs and Organizations -->
+      <section class="organizations section">
+        <div class="container">
+          <div class="organizations__content">
+            <h2 class="organizations__title">EVENTS and competitions</h2>
+            <p class="organizations__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quisquam rem adipisci modi ipsum corporis asperiores
+            </p>
+          </div>
+
+          <div class="organizations__container">
+            <div class="organizations__cards">
+              <h3>workshops and events</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                quam.
+              </p>
+            </div>
+
+            <div class="organizations__cards">
+              <h3>Startup competitions</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                quam.
+              </p>
+            </div>
+
+            <div class="organizations__cards">
+              <h3>gain practical experience</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tutors -->
+      <section class="tutors section">
+        <div class="container">
+          <h1 class="section__title">Tutors</h1>
+          <p class="section__subtitle-section">
+            These tutors have lots of experience to teach and guide for your
+            future
+          </p>
+
+          <div class="tutors__container">
+            <div class="tutors__cards">
+              <img src="images/first_teacher.jpg" alt="first-teacher" />
+              <div class="tutors__description">
+                <h3>Adeline</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sapiente temporibus numquam facilis animi harum necessitatibus
+                  eveniet optio unde, fuga labore.
+                </p>
+              </div>
+            </div>
+
+            <div class="tutors__cards">
+              <img src="images/second_teacher.jpg" alt="second-teacher" />
+              <div class="tutors__description">
+                <h3>Amanda</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sapiente temporibus numquam facilis animi harum necessitatibus
+                  eveniet optio unde, fuga labore.
+                </p>
+              </div>
+            </div>
+
+            <div class="tutors__cards">
+              <img src="images/third_teacher.jpg" alt="third-teacher" />
+              <div class="tutors__description">
+                <h3>Lexie</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sapiente temporibus numquam facilis animi harum necessitatibus
+                  eveniet optio unde, fuga labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials section">
+        <div class="container">
+          <h1 class="section__title">Testimonials</h1>
+          <p class="section__subtitle-section">
+            These are the feedback that given by students after used this
+            services
+          </p>
+
+          <div class="testimonials__container swiper">
+            <div class="swiper-wrapper">
+              <!-- First Article -->
+              <article class="testimonials__cards swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto, est! Rerum, et?
+                </p>
+
+                <!-- PFP and Star -->
+                <div class="testimonials__content">
+                  <div class="testimonials__profile">
+                    <img src="images/first_testimonial.jpg" alt="pfp" />
+                    <div class="testimonials__profile-detail">
+                      <p>Aliana</p>
+                    </div>
+                  </div>
+
+                  <div class="star">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Second Article -->
+              <article class="testimonials__cards swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto, est! Rerum, et?
+                </p>
+
+                <!-- PFP and Star -->
+                <div class="testimonials__content">
+                  <div class="testimonials__profile">
+                    <img src="images/second__testimonials.jpg" alt="pfp" />
+                    <div class="testimonials__profile-detail">
+                      <p>Fatimah</p>
+                    </div>
+                  </div>
+
+                  <div class="star">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Third Article -->
+              <article class="testimonials__cards swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto, est! Rerum, et?
+                </p>
+
+                <!-- PFP and Star -->
+                <div class="testimonials__content">
+                  <div class="testimonials__profile">
+                    <img src="images/third_testimonials.jpg" alt="pfp" />
+                    <div class="testimonials__profile-detail">
+                      <p>Haziq</p>
+                    </div>
+                  </div>
+
+                  <div class="star">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="price section" id="price">
+        <div class="container">
+          <h1 class="section__title">Pricing</h1>
+          <p class="section__subtitle-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            placeat.
+          </p>
+
+          <div class="price__container">
+            <div class="price__cards">
+              <h3>Basics</h3>
+              <p>Career Services <i class="bx bxs-check-square"></i></p>
+              <p>Elligible Join Clubs <i class="bx bxs-check-square"></i></p>
+              <p>Can Participate Events <i class="bx bxs-check-square"></i></p>
+              <button>Price: RM 10 / month</button>
+            </div>
+
+            <div class="price__cards">
+              <h3>Intermediate</h3>
+              <p>Career Services <i class="bx bxs-check-square"></i></p>
+              <p>Academic Services <i class="bx bxs-check-square"></i></p>
+              <p>Elligible Join Clubs <i class="bx bxs-check-square"></i></p>
+              <p>Can Participate Events <i class="bx bxs-check-square"></i></p>
+              <p>
+                Have Access To Library Books <i class="bx bxs-check-square"></i>
+              </p>
+              <button>Price: RM 20 / month</button>
+            </div>
+
+            <div class="price__cards">
+              <h3>Advanced</h3>
+              <p>Career Services <i class="bx bxs-check-square"></i></p>
+              <p>Tutoring Services <i class="bx bxs-check-square"></i></p>
+              <p>Academic Services <i class="bx bxs-check-square"></i></p>
+              <p>Elligible Join Clubs <i class="bx bxs-check-square"></i></p>
+              <p>Can Participate Events <i class="bx bxs-check-square"></i></p>
+              <p>
+                Have Access To Library Books <i class="bx bxs-check-square"></i>
+              </p>
+              <p>
+                Religious and Spiritual Services
+                <i class="bx bxs-check-square"></i>
+              </p>
+              <button>Price: RM 30 / month</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Website By Justin, All Rights Reserved</p>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
