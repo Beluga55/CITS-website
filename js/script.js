@@ -91,12 +91,37 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
-
   // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  
+
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*=============== SHOW SCROLL UP ===============*/
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+
+  if (this.scrollY >= 350) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+
+window.addEventListener("scroll", scrollUp);
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  reset: false,
+});
+
+sr.reveal(`.home__data`, { origin: "left" });
+sr.reveal(`.swiper, .section__title, .section__subtitle-section`);
+sr.reveal(
+  `.library__cards, .career__cards, .clubs__cards, .organizations__cards, .tutors__cards, .price__cards`,
+  { interval: 300 }
+);
